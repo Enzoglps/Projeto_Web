@@ -1,0 +1,166 @@
+body {
+    max-width: 100%;
+    margin: 0 auto; 
+    padding: 0 ; 
+    background-color: #fafafa;
+    
+}
+
+/* ---------- menu ---------- */
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu-container {
+  position: relative;
+}
+
+.menu-icon {
+  cursor: pointer;
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+}
+
+.menu-icon span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #f7f7f7;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+.menu-items {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 200px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.menu-items a {
+  display: block;
+  padding: 10px;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s;
+}
+
+.menu-items a:hover {
+  background-color: #eee;
+}
+
+.menu-items a:last-child {
+  border-bottom: none;
+}
+
+.menu-items.show {
+  display: block;
+}
+
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.titulo h1 {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  margin: 0;
+}
+
+.amg-logo img {
+  height: 40px;
+  filter: brightness(0) invert(1);
+}
+
+@media (max-width: 768px) {
+  .titulo h1 {
+      display: none;
+  }
+  .logo img, .amg-logo img {
+      height: 30px;
+  }
+
+}
+
+
+header p {
+  color: white;
+}
+
+/* ---------- conteúdo ---------- */
+
+.lojas {
+    max-width: 100%;
+    text-align: center;
+    background-color: #000000;
+    padding: 5%;
+    margin-bottom: 2px;
+}
+
+.lojas h1 {
+    color: white;
+    font-size: 5vw;
+}
+
+.lojas p {
+    color: white;
+    font-size: 2.5vw;
+}
+
+.lojas img {
+    width: 100%;
+    right: auto;
+    margin-top: 7%;
+    margin-bottom: 6%;
+}
+
+/* ---------- footer ---------- */
+
+footer {
+  
+    max-width: 100%;
+    text-align: center;
+    font-size: 130%;
+  }
+  
+  footer p {
+    color: white;
+  }
+  
+  .footer-inf {
+    background-color: #000000;
+    padding: 10px;
+  }
+  
+  .footer-aviso {
+    background-color: #000000;
+    padding: 10px;
+    margin-top: 10px;
+  }
